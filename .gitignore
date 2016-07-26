@@ -7,3 +7,4 @@ deps/*
 edoc
 .rebar/
 deps.test/*
+_build/

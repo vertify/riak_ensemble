@@ -1,0 +1,12 @@
+[{<<"eleveldb">>,
+  {git,"git://github.com/basho/eleveldb.git",
+       {ref,"0082045288bee07241be19fdf86633bd0b2cca28"}},
+  0},
+ {<<"goldrush">>,
+  {git,"git://github.com/DeadZen/goldrush.git",
+       {ref,"212299233c7e7eb63a97be2777e1c05ebaa58dbe"}},
+  1},
+ {<<"lager">>,
+  {git,"git://github.com/basho/lager.git",
+       {ref,"8187757388c9adc915379caaab36a2f2ca26e944"}},
+  0}].
