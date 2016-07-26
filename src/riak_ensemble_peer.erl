@@ -1816,7 +1816,7 @@ get_value(Obj, Default, State) ->
 init([Mod, Ensemble, Id, Args]) ->
     ?OUT("~p: starting~n", [Id]),
     {A,B,C} = os:timestamp(),
-    _ = random:seed(A + erlang:phash2(Id),
+    _ = rand:seed(A + erlang:phash2(Id),
                     B + erlang:phash2(node()),
                     C),
     ETS = ets:new(x, [public, {read_concurrency, true}, {write_concurrency, true}]),

@@ -87,7 +87,7 @@ get_path(Opts) ->
     case proplists:get_value(path, Opts) of
         undefined ->
             Base = "/tmp/ST",
-            Name = integer_to_list(timestamp(erlang:now())),
+            Name = integer_to_list(timestamp(erlang:timestamp())),
             filename:join(Base, Name);
         Path ->
             Path
@@ -159,4 +159,3 @@ leveldb_opts() ->
      {write_buffer_size, 4 * 1024 * 1024},
      {use_bloomfilter, true},
      {create_if_missing, true}].
-
